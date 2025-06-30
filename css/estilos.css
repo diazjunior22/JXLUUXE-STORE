@@ -1,0 +1,356 @@
+/* Estilos personalizados para la tienda */
+
+:root {
+  --primary-color: #09f3ff;
+  --secondary-color: #6c757d;
+  --success-color: #198754;
+  --danger-color: #dc3545;
+  --warning-color: #ffc107;
+  --info-color: #0dcaf0;
+  --light-color: #f8f9fa;
+  --dark-color: #212529;
+}
+
+/* Estilos generales */
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+}
+
+/* Hero Section */
+.hero-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url('img/hero.jpg') no-repeat center center;
+  text-align: center;
+  background-size: cover;
+  background-position: center;
+  color: rgb(255, 255, 255);
+  height: 300px;
+}
+.hero-section .container .h1 {
+  color: white;
+}
+.hero-section .display-4 {
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+/* Navbar personalizada */
+.color-jx {
+  background-color : black !important;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.navbar-brand {
+  font-size: 1.5rem;
+}
+
+/* Tarjetas de productos */
+.producto-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border: none;
+  overflow: hidden;
+}
+
+.producto-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15) !important;
+}
+
+.producto-card .card-img-top {
+  height: 250px;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.producto-card:hover .card-img-top {
+  transform: scale(1.05);
+}
+
+.producto-card .card-body {
+  padding: 1.5rem;
+}
+
+.producto-card .card-title {
+  color: var(--dark-color);
+  font-weight: 600;
+  margin-bottom: 0.75rem;
+}
+
+.producto-card .card-text {
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+
+/* Badges */
+.badge {
+  font-size: 0.75rem;
+  padding: 0.5em 0.75em;
+}
+
+/* Botones */
+.btn {
+  border-radius: 8px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.btn-primary {
+  background: linear-gradient(45deg, #0d6efd, #0056b3);
+  border: none;
+}
+
+.btn-primary:hover {
+  background: linear-gradient(45deg, #0056b3, #004085);
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(13, 110, 253, 0.3);
+}
+
+.btn-outline-primary:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(13, 110, 253, 0.2);
+}
+
+/* Página de detalle del producto */
+.breadcrumb {
+  background: transparent;
+  padding: 0;
+}
+
+.breadcrumb-item + .breadcrumb-item::before {
+  content: "›";
+  font-weight: bold;
+}
+
+.card-img-top{
+  height: 300px;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+
+
+.caja-imagen {
+  position: relative;
+  overflow: hidden;
+  border-radius: 12px;
+  position: flex;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 300px;
+  width:  350px;
+}
+  
+
+
+
+
+
+
+/* Filtros */
+.form-select,
+.form-control {
+  border-radius: 8px;
+  border: 2px solid #e9ecef;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.form-select:focus,
+.form-control:focus {
+  border-color: black;
+  box-shadow: 0 0 0 0.2rem black;
+}
+
+/* Animaciones */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.producto-card {
+  animation: fadeIn 0.6s ease forwards;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .hero-section .display-4 {
+    font-size: 2.5rem;
+  }
+
+  .producto-card .card-img-top {
+    height: 200px;
+    object-fit: cover;
+
+  }
+
+  .btn-lg {
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .hero-section {
+    padding: 3rem 0;
+  }
+
+  .hero-section .display-4 {
+    font-size: 2rem;
+  }
+
+  .producto-card .card-body {
+    padding: 1rem;
+  }
+}
+
+/* Efectos adicionales */
+.shadow-sm {
+  box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075) !important;
+}
+
+.text-primary {
+  color: var(--primary-color) ;
+}
+
+/* Footer */
+footer {
+  margin-top: auto;
+}
+
+/* Scroll suave */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Loading states */
+.loading {
+  opacity: 0.6;
+  pointer-events: none;
+}
+
+/* Mejoras de accesibilidad */
+.btn:focus,
+.form-control:focus,
+.form-select:focus {
+  outline: 2px solid black;
+  outline-offset: 2px;
+}
+
+/* Estilos para productos relacionados */
+#productosRelacionados .card {
+  transition: transform 0.2s ease;
+}
+
+#productosRelacionados .card:hover {
+  transform: translateY(-3px);
+}
+
+/* Estilos para el detalle del producto */
+.display-6 {
+  font-size: 2.5rem;
+  font-weight: 600;
+}
+
+/* Características del producto */
+.list-unstyled li {
+  padding: 0.25rem 0;
+  color: var(--dark-color);
+}
+
+/* Responsive para el detalle del producto */
+@media (max-width: 991px) {
+  .ps-lg-4 {
+    padding-left: 0 !important;
+    margin-top: 2rem;
+  }
+}
+
+/* Galería de productos */
+.product-gallery .main-image {
+  position: relative;
+  overflow: hidden;
+  border-radius: 12px;
+}
+
+.product-gallery .main-image img {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.product-gallery .main-image:hover img {
+  transform: scale(1.05);
+}
+
+.thumbnail-images .thumbnail-img {
+  height: 80px;
+  object-fit: cover;
+  cursor: pointer;
+  border: 2px solid transparent;
+  transition: all 0.3s ease;
+  opacity: 0.7;
+}
+
+.thumbnail-images .thumbnail-img:hover {
+  opacity: 1;
+  border-color: var(--primary-color);
+  transform: scale(1.05);
+}
+
+.thumbnail-images .thumbnail-img.active {
+  opacity: 1;
+  border-color: var(--primary-color);
+  box-shadow: 0 0 10px rgba(13, 110, 253, 0.3);
+}
+
+/* Badge de disponibilidad */
+.badge.bg-success {
+  background-color: var(--success-color) !important;
+}
+
+/* Responsive para galería */
+@media (max-width: 768px) {
+  .product-gallery .main-image img {
+    height: 300px;
+  }
+
+  .thumbnail-images .thumbnail-img {
+    height: 60px;
+  }
+}
+
+@media (max-width: 576px) {
+  .product-gallery .main-image img {
+    height: 250px;
+  }
+
+  .thumbnail-images .thumbnail-img {
+    height: 50px;
+  }
+}
+
+/* Animación para cambio de imagen */
+#imagenPrincipal {
+  transition: opacity 0.3s ease;
+}
+
+/* Efecto hover para thumbnails */
+.thumbnail-images .col-3 {
+  padding: 2px;
+}
+
+
+
+
+.cambiar {
+  color: white;
+  font-weight: bold;
+}
