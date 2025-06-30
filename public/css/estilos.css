@@ -159,7 +159,7 @@ body {
 .form-select:focus,
 .form-control:focus {
   border-color: black;
-  box-shadow: 0 0 0 0.2rem black;
+  box-shadow: 0 0 0 0.2rem ;
 }
 
 /* Animaciones */
