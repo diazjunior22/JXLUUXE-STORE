@@ -9,7 +9,7 @@ const productos = [
     precio: 100000,
     precioAnterior: 120000,
     categoria: "Tecnología",
-    disponible: false,
+    disponible: true,
     imagenes: [
       'img/tecnologia/airpords-pro2.webp',
       'img/tecnologia/airpords-pro2-1.webp'
