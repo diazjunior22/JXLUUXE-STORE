@@ -1,4 +1,7 @@
 // Base de datos de productos
+
+let pedidos = "PEDIDOS INMEDIATOS EN BARRAQUILLA Y SOLEDAD"
+
 const productos = [
   {
 
@@ -6,8 +9,8 @@ const productos = [
     id: 1,
     nombre: "🧊 AirPods Pro 2",
     descripcion: "Auriculares inalámbricos de alta gama con cancelación activa de ruido, audio espacial y diseño ergonómico. Ideales para música, llamadas y uso diario.",
-    precio: 100000,
-    precioAnterior: 120000,
+    precio: 90000,
+    precioAnterior: 100000,
     categoria: "Tecnología",
     disponible: true,
     imagenes: [
@@ -20,6 +23,7 @@ const productos = [
       "Cancelación de ruido activa",
       "Audio espacial con seguimiento dinámico de la cabeza",
       "Chip H2 para mejor calidad de sonido y eficiencia",
+      pedidos
 
     ],
   },
@@ -29,7 +33,7 @@ const productos = [
     id: 2,
     nombre: "Mouse G950",
     descripcion: "Mouse ergonómico con iluminación RGB y sensor de alta precisión. Perfecto para gamers, diseñadores o uso de oficina prolongado.",
-    precio: 55000,
+    precio: 50000,
     precioAnterior: 70000,
     categoria: "Tecnología",
     disponible: true,
