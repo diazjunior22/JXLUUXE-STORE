@@ -25,7 +25,9 @@ const productos = [
       "Chip H2 para mejor calidad de sonido y eficiencia",
       pedidos
 
+
     ],
+
   },
 
   {
@@ -48,6 +50,7 @@ const productos = [
       "Iluminación LED RGB personalizable",
       "7 botones programables",
       "Conexión USB Plug & Play",
+      pedidos
     ],
   },
 
@@ -74,6 +77,7 @@ const productos = [
       "Color: Rojo intenso con detalles en blanco y azul",
       "Visera plana y estructura firme estilo fitted",
       "Logo bordado en 3D de alta calidad",
+      pedidos
 
 
     ],
@@ -94,7 +98,8 @@ const productos = [
       "Ajuste trasero con correa metálica",
       "Material: algodón peinado de alta calidad",
       "Diseño unisex",
-      "Ventilación en paneles laterales"
+      "Ventilación en paneles laterales",
+      pedidos,
     ],
   },
 
@@ -117,7 +122,8 @@ const productos = [
       "Cierre ajustable tipo velcro para mayor comodidad",
       "Unisex – ideal para hombres y mujeres",
       "Ideal para looks urbanos, conciertos, skate, moda callejera",
-      '💬 Frase para usar en tu post:🔥 ¡Tu actitud necesita una gorra que haga juego! 🔥'
+      '💬 Frase para usar en tu post:🔥 ¡Tu actitud necesita una gorra que haga juego! 🔥',
+      pedidos,
     ],
   },
 
@@ -139,6 +145,7 @@ const productos = [
       "Cierre trasero ajustable",
       "Comodidad ligera para uso prolongado",
       "Diseño único con significado espiritual",
+      pedidos
     ],
   },
 
@@ -170,6 +177,7 @@ const productos = [
       "Carga rápida de 15 minutos",
       "Bluetooth 5.0",
       "Controles táctiles",
+      pedidos
     ],
   },
 //---------------------------------------------------------------------------------------------
@@ -195,6 +203,7 @@ const productos = [
       "Resistente al agua 50m",
       "Batería de 7 días",
       "Más de 100 modos deportivos",
+      pedidos
     ],
   },
 
