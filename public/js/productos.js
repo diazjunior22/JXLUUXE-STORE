@@ -159,27 +159,113 @@ const productos = [
   // CATEGORIA CAMISAS
   {
     id: 20,
-    nombre: "Auriculares Inalámbricos",
-    descripcion: "Auriculares premium con cancelación de ruido activa",
-    precio: 299000,
-    precioAnterior: 349000,
+    nombre: "Camiseta Angel",
+    descripcion: "Camiseta ",
+    precio: 42.000,
+    precioAnterior: 55.0000,
     categoria: "CAMISAS",
-    disponible: false, // No disponible
+    disponible: true, // No disponible
     imagenes: [
-      "/placeholder.svg?height=400&width=400&text=Auriculares+Vista1",
-      "/placeholder.svg?height=400&width=400&text=Auriculares+Vista2",
-      "/placeholder.svg?height=400&width=400&text=Auriculares+Estuche",
+      "img/camisetas/azul.jpg"
+    
     ],
-    imagen: "/placeholder.svg?height=400&width=400&text=Auriculares+Vista1",
+    imagen: "img/camisetas/azul.jpg",
     caracteristicas: [
-      "Cancelación de ruido activa",
-      "Batería de 30 horas",
-      "Carga rápida de 15 minutos",
-      "Bluetooth 5.0",
-      "Controles táctiles",
-      pedidos
+     pedidos
     ],
+
   },
+
+    // CATEGORIA CAMISAS
+  {
+    id: 21,
+    nombre: "Camiseta ",
+    descripcion: "Camiseta ",
+    precio: 42000,
+    precioAnterior: 55000,
+    categoria: "CAMISAS",
+    disponible: true, // No disponible
+    imagenes: [
+      'img/camisetas/camisa-pajaro2.jpg',
+      'img/camisetas/camisa-pajaro.jpg'
+
+    ],
+    imagen: "img/camisetas/camisa-pajaro2.jpg",
+    caracteristicas: [
+     pedidos
+    ],
+
+  },
+
+
+    // CATEGORIA CAMISAS
+  {
+    id: 23,
+    nombre: "Camiseta Marron",
+    descripcion: "Camiseta ",
+    precio: 42000,
+    precioAnterior: 55000,
+    categoria: "CAMISAS",
+    disponible: true, // No disponible
+    imagenes: [
+    "img/camisetas/camisa-marron-1.jpg",
+    "img/camisetas/camisa-marron-3.jpg"
+    ],
+    imagen: "img/camisetas/camisa-marron-1.jpg",
+    caracteristicas: [
+     pedidos
+    ],
+
+  },
+
+
+    {
+    id: 24,
+    nombre: "Camiseta ",
+    descripcion: "Camiseta ",
+    precio: 42000,
+    precioAnterior: 55000,
+    categoria: "CAMISAS",
+    disponible: true, // No disponible
+    imagenes: [
+      'img/camisetas/camisa-negra-red2.jpg',
+      'img/camisetas/camisa-negra-red.jpg',
+
+    ],
+    imagen: "img/camisetas/camisa-negra-red2.jpg",
+    caracteristicas: [
+     pedidos
+    ],
+
+  },
+
+
+  
+    {
+    id: 26,
+    nombre: "Camiseta ",
+    descripcion: "Camiseta ",
+    precio: 42000,
+    precioAnterior: 55000,
+    categoria: "CAMISAS",
+    disponible: true, // No disponible
+    imagenes: [
+      "img/camisetas/camiseta-negra-1.jpg"
+    ],
+    imagen: "img/camisetas/camiseta-negra-1.jpg",
+    caracteristicas: [
+     pedidos
+    ],
+
+  },
+
+  
+
+
+
+
+
+
 //---------------------------------------------------------------------------------------------
 
   // CATEGORIA ZAPATOS
