@@ -161,7 +161,7 @@ const productos = [
     id: 20,
     nombre: "Camiseta Angel",
     descripcion: "Camiseta ",
-    precio: 42.000,
+    precio: 42000,
     precioAnterior: 55.0000,
     categoria: "CAMISAS",
     disponible: true, // No disponible
@@ -258,6 +258,32 @@ const productos = [
     ],
 
   },
+
+
+
+  
+  
+    {
+    id: 29,
+    nombre: "Camiseta ",
+    descripcion: "Camiseta ",
+    precio: 42000,
+    precioAnterior: 55000,
+    categoria: "CAMISAS",
+    disponible: true, // No disponible
+    imagenes: [
+      "img/camisetas/camisa1.jpg", 
+
+
+    ] ,
+    imagen: "img/camisetas/camisa.png",
+    caracteristicas: [
+     pedidos
+    ],
+
+  },
+
+  
 
   
 
