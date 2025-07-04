@@ -2,6 +2,9 @@
 
 let pedidos = "PEDIDOS INMEDIATOS EN BARRAQUILLA Y SOLEDAD"
 
+let talla_l = 'Talla L'
+let talla_xl = 'Talla Xl'
+
 const productos = [
   {
 
@@ -89,7 +92,7 @@ const productos = [
     descripcion: "Gorra de estilo urbano premium, confeccionada con materiales resistentes y diseño exclusivo. Ideal para un look casual o deportivo.",
     precio: 40000,
     categoria: "Gorras",
-    disponible: true,
+    disponible: false,
     imagenes: [
       "img/gorras/gorra-coach.jpg?height=400&width=400&text=Smartphone+Frontal",
     ],
@@ -171,12 +174,13 @@ const productos = [
     ],
     imagen: "img/camisetas/azul.jpg",
     caracteristicas: [
-     pedidos
+     pedidos,
+     talla_l
     ],
 
   },
 
-    // CATEGORIA CAMISAS
+    // CATEGORIA CAMISAS  
   {
     id: 21,
     nombre: "Camiseta ",
@@ -192,7 +196,8 @@ const productos = [
     ],
     imagen: "img/camisetas/camisa-pajaro2.jpg",
     caracteristicas: [
-     pedidos
+     pedidos ,
+     talla_xl
     ],
 
   },
@@ -213,7 +218,8 @@ const productos = [
     ],
     imagen: "img/camisetas/camisa-marron-1.jpg",
     caracteristicas: [
-     pedidos
+     pedidos ,
+     talla_xl
     ],
 
   },
@@ -234,7 +240,8 @@ const productos = [
     ],
     imagen: "img/camisetas/camisa-negra-red2.jpg",
     caracteristicas: [
-     pedidos
+     pedidos ,
+     talla_l
     ],
 
   },
@@ -254,7 +261,10 @@ const productos = [
     ],
     imagen: "img/camisetas/camiseta-negra-1.jpg",
     caracteristicas: [
-     pedidos
+        talla_xl,
+        pedidos
+
+      
     ],
 
   },
@@ -278,7 +288,8 @@ const productos = [
     ] ,
     imagen: "img/camisetas/camisa.png",
     caracteristicas: [
-     pedidos
+     pedidos , 
+     talla_l
     ],
 
   },
