@@ -5,6 +5,8 @@ let pedidos = "PEDIDOS INMEDIATOS EN BARRAQUILLA Y SOLEDAD"
 let talla_l = 'Talla L'
 let talla_xl = 'Talla Xl'
 
+let precioCamisas = 38000
+
 const productos = [
   {
 
@@ -164,7 +166,7 @@ const productos = [
     id: 20,
     nombre: "Camiseta Angel",
     descripcion: "Camiseta ",
-    precio: 42000,
+    precio: precioCamisas,
     precioAnterior: 55.0000,
     categoria: "CAMISAS",
     disponible: true, // No disponible
@@ -185,7 +187,7 @@ const productos = [
     id: 21,
     nombre: "Camiseta ",
     descripcion: "Camiseta ",
-    precio: 42000,
+    precio: precioCamisas,
     precioAnterior: 55000,
     categoria: "CAMISAS",
     disponible: true, // No disponible
@@ -208,7 +210,7 @@ const productos = [
     id: 23,
     nombre: "Camiseta Marron",
     descripcion: "Camiseta ",
-    precio: 42000,
+    precio: precioCamisas,
     precioAnterior: 55000,
     categoria: "CAMISAS",
     disponible: true, // No disponible
@@ -229,7 +231,7 @@ const productos = [
     id: 24,
     nombre: "Camiseta ",
     descripcion: "Camiseta ",
-    precio: 42000,
+    precio: precioCamisas,
     precioAnterior: 55000,
     categoria: "CAMISAS",
     disponible: true, // No disponible
@@ -252,7 +254,7 @@ const productos = [
     id: 26,
     nombre: "Camiseta ",
     descripcion: "Camiseta ",
-    precio: 42000,
+    precio: precioCamisas,
     precioAnterior: 55000,
     categoria: "CAMISAS",
     disponible: true, // No disponible
@@ -277,7 +279,7 @@ const productos = [
     id: 29,
     nombre: "Camiseta ",
     descripcion: "Camiseta ",
-    precio: 42000,
+    precio: precioCamisas,
     precioAnterior: 55000,
     categoria: "CAMISAS",
     disponible: true, // No disponible
