@@ -69,7 +69,7 @@ const productos = [
     descripcion: "Rompe las reglas del estilo con la New Era 59FIFTY Upside Down AOP Angels en rojo. Un modelo edición especial que destaca por su diseño invertido y estampado all-over, perfecto para verdaderos fanáticos del streetwear y el béisbol. Con el logo de los Angels girado, esta gorra es una declaración de actitud y autenticidad.",
     precio: 40000,
     categoria: "Gorras",
-    disponible: true,
+    disponible: false,
     imagenes: [ 
       "img/gorras/gorra-roja47.jpg?height=400&width=400&text=Smartphone+Frontal"
  
@@ -114,7 +114,7 @@ const productos = [
     descripcion: "Destaca tu estilo con la Gorra West con llamas, una prenda con carácter único y energía ardiente. Perfecta para quienes no temen sobresalir y llevar la moda urbana a otro nivel. Su diseño con bordado de llamas aporta un toque rebelde y llamativo, ideal para combinar con outfits urbanos, streetwear o casuales.",
     precio: 45000,
     categoria: "Gorras",
-    disponible: true,
+    disponible: false,
     imagenes: [
       "img/gorras/gorra-west-llamas.jpg?height=400&width=400&text=Laptop+Abierta",
    
@@ -282,7 +282,7 @@ const productos = [
     precio: precioCamisas,
     precioAnterior: 55000,
     categoria: "CAMISAS",
-    disponible: true, // No disponible
+    disponible: false, // No disponible
     imagenes: [
       "img/camisetas/camisa1.jpg", 
 
