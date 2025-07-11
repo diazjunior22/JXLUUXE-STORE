@@ -43,7 +43,7 @@ const productos = [
     precio: 50000,
     precioAnterior: 70000,
     categoria: "Tecnología",
-    disponible: true,
+    disponible: false,
     imagenes: [
       "img/tecnologia/mouseg950-1.jpg?height=400&width=400&text=Smartphone+Frontal",
       "img/tecnologia/mouseg950-2.jpg?height=400&width=400&text=Smartphone+Perfil",
@@ -190,7 +190,7 @@ const productos = [
     precio: precioCamisas,
     precioAnterior: 55000,
     categoria: "CAMISAS",
-    disponible: true, // No disponible
+    disponible: false, // No disponible
     imagenes: [
       'img/camisetas/camisa-pajaro2.jpg',
       'img/camisetas/camisa-pajaro.jpg'
