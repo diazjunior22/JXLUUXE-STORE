@@ -14,7 +14,7 @@ const productos = [
     id: 1,
     nombre: "🧊 AirPods Pro 2",
     descripcion: "Auriculares inalámbricos de alta gama con cancelación activa de ruido, audio espacial y diseño ergonómico. Ideales para música, llamadas y uso diario.",
-    precio: 950000,
+    precio: 95000,
     precioAnterior: 100000,
     categoria: "Tecnología",
     disponible: true,
