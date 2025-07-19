@@ -14,16 +14,15 @@ const productos = [
     id: 1,
     nombre: "🧊 AirPods Pro 2",
     descripcion: "Auriculares inalámbricos de alta gama con cancelación activa de ruido, audio espacial y diseño ergonómico. Ideales para música, llamadas y uso diario.",
-    precio: 90000,
+    precio: 950000,
     precioAnterior: 100000,
     categoria: "Tecnología",
     disponible: true,
     imagenes: [
-      'img/tecnologia/airpords-pro2.webp',
-      'img/tecnologia/airpords-pro2-1.webp'
-      
+      'img/tecnologia/airpord1.jpg',
+      'img/tecnologia/airpord2.jpg'
     ],
-    imagen: "img/tecnologia/airpords-pro2.webp", // Imagen principal para compatibilidad
+    imagen: "img/tecnologia/airpord1.jpg", // Imagen principal para compatibilidad
     caracteristicas: [
       "Cancelación de ruido activa",
       "Audio espacial con seguimiento dinámico de la cabeza",
@@ -43,12 +42,12 @@ const productos = [
     precio: 50000,
     precioAnterior: 70000,
     categoria: "Tecnología",
-    disponible: false,
+    disponible: true,
     imagenes: [
-      "img/tecnologia/mouseg950-1.jpg?height=400&width=400&text=Smartphone+Frontal",
-      "img/tecnologia/mouseg950-2.jpg?height=400&width=400&text=Smartphone+Perfil",
+      "img/tecnologia/mouse1.png?height=400&width=400&text=Smartphone+Frontal",
+      "img/tecnologia/mouse3.jpg?height=400&width=400&text=Smartphone+Perfil",
     ],
-    imagen: "img/tecnologia/mouseg950-1.jpg", // Imagen principal para compatibilidad
+    imagen: "img/tecnologia/mouse2.jpg", // Imagen principal para compatibilidad
     caracteristicas: [
       "Sensor óptico de 7200 DPI ajustables",
       "Diseño ergonómico y ambidiestro",
@@ -296,43 +295,67 @@ const productos = [
 
   },
 
-  
-
-  
-
-
-
-
-
 
 //---------------------------------------------------------------------------------------------
 
-  // CATEGORIA ZAPATOS
-  {
-    id: 30,
-    nombre: "Smartwatch Deportivo",
-    descripcion: "Reloj inteligente con monitoreo de salud y GPS integrado",
-    precio: 249000,
-    categoria: "ZAPATOS",
-    disponible: false,
-    imagenes: [
-      "/placeholder.svg?height=400&width=400&text=Smartwatch+Frente",
-      "/placeholder.svg?height=400&width=400&text=Smartwatch+Perfil",
-      "/placeholder.svg?height=400&width=400&text=Smartwatch+Correas",
-      "/placeholder.svg?height=400&width=400&text=Smartwatch+Apps",
-    ],
-    imagen: "/placeholder.svg?height=400&width=400&text=Smartwatch+Frente",
-    caracteristicas: [
-      "GPS integrado",
-      "Monitor de frecuencia cardíaca",
-      "Resistente al agua 50m",
-      "Batería de 7 días",
-      "Más de 100 modos deportivos",
-      pedidos
-    ],
-  },
+  // CATEGORIA Belleza y Cuidado Personal
+{
+  id: 30,
+  nombre: "Jabón de Rosas  Artesanal ",
+  descripcion: "Jabón artesanal en forma de rosa. Hidrata, suaviza, regenera y calma la piel. Ideal para todo tipo de piel.",
+  precio: 12000,  // Asumiendo pesos colombianos
+  categoria: "Belleza y Cuidado Personal",
+  disponible: true,
+  imagenes: [
+    "img/jabones/jabon_rosas1.jpg",
+  ],
+  imagen: "img/jabones/jabon_rosas1.jpg",
+  caracteristicas: [
+    "Hidrata, suaviza y relaja",
+    "Regenera la piel",
+    "Ideal para todo tipo de piel",
+    "Alivia la piel irritada o sensible"
+  ]
+},
 
-  
+{
+  id: 31,
+  nombre: "Jabón de Carbón Activado",
+  descripcion: "Jabón artesanal con carbón activado. Limpia, purifica y controla el exceso de grasa e impurezas. Ideal para pieles grasas.",
+  precio: 12000,
+  categoria: "Belleza y Cuidado Personal",
+  disponible: true,
+  imagenes: [
+    "img/jabones/jabon_carbon_activado1.jpg"
+  ],
+  imagen: "img/jabones/jabon_carbon_activado1.jpg",
+  caracteristicas: [
+    "Desintoxica la piel",
+    "Limpia y purifica profundamente",
+    "Ideal para pieles grasas",
+    "Controla el exceso de grasa e impurezas"
+  ]
+}, 
+
+{
+  id: 32,
+  nombre: "Jabón de Avena Artesanal",
+  descripcion: "Jabón artesanal en forma de rosa con avena natural. Exfolia suavemente, nutre e hidrata la piel. Ideal para pieles sensibles o con irritaciones.",
+  precio: 12000,
+  categoria: "Belleza y Cuidado Personal",
+  disponible: true,
+  imagenes: [
+    "img/jabones/jabon_avena1.jpg"
+  ],
+  imagen: "img/jabones/jabon_avena1.jpg",
+  caracteristicas: [
+    "Exfolia y nutre",
+    "Alivia la piel con irritaciones",
+    "Ideal para todo tipo de piel",
+    "Suaviza e hidrata la piel"
+  ]
+}
+
 
 
 
