@@ -168,7 +168,7 @@ const productos = [
     precio: precioCamisas,
     precioAnterior: 55.0000,
     categoria: "CAMISAS",
-    disponible: true, // No disponible
+    disponible: false, // No disponible
     imagenes: [
       "img/camisetas/azul.jpg"
     
@@ -233,7 +233,7 @@ const productos = [
     precio: precioCamisas,
     precioAnterior: 55000,
     categoria: "CAMISAS",
-    disponible: true, // No disponible
+    disponible: false, // No disponible
     imagenes: [
       'img/camisetas/camisa-negra-red2.jpg',
       'img/camisetas/camisa-negra-red.jpg',
