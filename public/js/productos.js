@@ -32,11 +32,36 @@ const productos = [
 
     ],
 
-  },
+  }, 
+
+  {
+  id: 2,
+  nombre: "🎧 AirPord Max - Gris Espacial",
+  descripcion: "Audífonos inalámbricos de alta gama con sonido envolvente, cancelación activa de ruido y diseño elegante en color gris. Perfectos para disfrutar de una experiencia auditiva premium.",
+  precio: 17000,
+  precioAnterior: 199000,
+  categoria: "Tecnología",
+  disponible: true,
+  imagenes: [
+    'img/tecnologia/airpord_max_gris1.jpg',
+    'img/tecnologia/airpord_max_gris2.jpg',
+    'img/tecnologia/airpord_max_gris3.jpg'
+  ],
+  imagen: 'img/tecnologia/airpord_max_gris1.jpg', // Imagen principal
+  caracteristicas: [
+    "Cancelación activa de ruido con modo ambiente",
+    "Sonido de alta fidelidad con graves potentes",
+    "Diseño en aluminio anodizado con diadema de malla",
+    "Hasta 20 horas de batería con uso continuo",
+    "Controles físicos intuitivos en el auricular",
+    "Color gris espacial – moderno y sofisticado"
+  ]
+}
+,
 
   {
 
-    id: 2,
+    id: 3,
     nombre: "Mouse G950",
     descripcion: "Mouse ergonómico con iluminación RGB y sensor de alta precisión. Perfecto para gamers, diseñadores o uso de oficina prolongado.",
     precio: 50000,
@@ -256,7 +281,7 @@ const productos = [
     precio: precioCamisas,
     precioAnterior: 55000,
     categoria: "CAMISAS",
-    disponible: true, // No disponible
+    disponible: false, // No disponible
     imagenes: [
       "img/camisetas/camiseta-negra-1.jpg"
     ],
