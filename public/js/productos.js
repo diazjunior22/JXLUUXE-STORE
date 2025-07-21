@@ -54,7 +54,8 @@ const productos = [
     "Diseño en aluminio anodizado con diadema de malla",
     "Hasta 20 horas de batería con uso continuo",
     "Controles físicos intuitivos en el auricular",
-    "Color gris espacial – moderno y sofisticado"
+    "Color gris espacial – moderno y sofisticado",
+    '...'
   ]
 }
 ,
