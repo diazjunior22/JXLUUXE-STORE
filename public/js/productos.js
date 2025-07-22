@@ -38,8 +38,8 @@ const productos = [
   id: 2,
   nombre: "🎧 AirPord Max - Gris Espacial",
   descripcion: "Audífonos inalámbricos de alta gama con sonido envolvente, cancelación activa de ruido y diseño elegante en color gris. Perfectos para disfrutar de una experiencia auditiva premium.",
-  precio: 170000,
-  precioAnterior: 199000,
+  precio: 130000,
+  precioAnterior: 176000,
   categoria: "Tecnología",
   disponible: true,
   imagenes: [
@@ -137,7 +137,7 @@ const productos = [
     id: 12,
     nombre: "Gorra West con Llamas",
     descripcion: "Destaca tu estilo con la Gorra West con llamas, una prenda con carácter único y energía ardiente. Perfecta para quienes no temen sobresalir y llevar la moda urbana a otro nivel. Su diseño con bordado de llamas aporta un toque rebelde y llamativo, ideal para combinar con outfits urbanos, streetwear o casuales.",
-    precio: 45000,
+    precio: 40000,
     categoria: "Gorras",
     disponible: false,
     imagenes: [
