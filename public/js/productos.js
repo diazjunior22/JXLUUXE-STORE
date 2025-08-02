@@ -38,7 +38,7 @@ const productos = [
   id: 2,
   nombre: "🎧 AirPord Max - Gris Espacial",
   descripcion: "Audífonos inalámbricos de alta gama con sonido envolvente, cancelación activa de ruido y diseño elegante en color gris. Perfectos para disfrutar de una experiencia auditiva premium.",
-  precio: 130000,
+  precio: 120000,
   precioAnterior: 176000,
   categoria: "Tecnología",
   disponible: true,
