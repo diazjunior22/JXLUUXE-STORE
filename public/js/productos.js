@@ -38,8 +38,8 @@ const productos = [
   id: 2,
   nombre: "🎧 AirPord Max - Gris Espacial",
   descripcion: "Audífonos inalámbricos de alta gama con sonido envolvente, cancelación activa de ruido y diseño elegante en color gris. Perfectos para disfrutar de una experiencia auditiva premium.",
-  precio: 120000,
-  precioAnterior: 176000,
+  precio: 110000,
+  precioAnterior: 150000,
   categoria: "Tecnología",
   disponible: true,
   imagenes: [
@@ -322,16 +322,95 @@ const productos = [
   },
 
 
+
+  {
+    id: 61,
+    nombre: "Camiseta Tokyo Cars ",
+    descripcion: "Camiseta ",
+    precio: precioCamisas,
+    precioAnterior: 38000,
+    categoria: "CAMISAS",
+    disponible: false, // No disponible
+    imagenes: [
+      "img/camisetas/camisaTokyo.png", 
+
+
+    ] ,
+    imagen: "img/camisetas/camisaTokyo.png",
+    caracteristicas: [
+     pedidos , 
+     talla_l,
+    ],
+
+  },
+
+
+
+{
+  "id": 60,
+  "nombre": "Camiseta Deportiva de Gimnasio",
+  "descripcion": "Camiseta deportiva diseñada para entrenamientos intensos. Fabricada con tela ligera, elástica y transpirable que brinda comodidad y libertad de movimiento. Perfecta para gimnasio, running o actividades al aire libre.",
+  "precio": precioCamisas,
+  "precioAnterior": 55000,
+  "categoria": "CAMISAS",
+  "disponible": true,
+  "imagenes": [
+    "img/camisetas/gym.png",
+    "img/camisetas/gym2.png"
+
+  ],
+  "imagen": "img/camisetas/gym.png",
+  "caracteristicas": [
+    "Disponible en talla L y M",
+    "Tela ligera y transpirable",
+    "Secado rápido",
+    "Corte cómodo y ergonómico",
+    "Ideal para actividades deportivas"
+  ]
+},
+  
+{
+  "id": 63,
+  "nombre": "Camiseta Deportiva Estampado de Esqueleto",
+  "descripcion": "Camiseta deportiva con estampado de esqueleto, confeccionada con tela ligera y transpirable para un máximo confort. Ideal para entrenamientos, actividades al aire libre o para lucir un look urbano y llamativo.",
+  "precio": precioCamisas,
+  "precioAnterior": 36000,
+  "categoria": "CAMISAS",
+  "disponible": true,
+  "imagenes": [
+    "img/camisetas/esqueleto2.jpg",
+    "img/camisetas/esqueleto.jpg",
+    "img/camisetas/esqueleto3.png",
+    "img/camisetas/esqueleto4.png",
+
+  ],
+  "imagen": "img/camisetas/esqueleto2.jpg",
+  "caracteristicas": [
+    "Estampado de esqueleto de alta calidad",
+    "Tela ligera y transpirable",
+    "Secado rápido",
+    "Cómoda y resistente",
+    "Talla L Disponible"
+  ]
+},
+
+
+
+
+
+
+
+
 //---------------------------------------------------------------------------------------------
 
   // CATEGORIA Belleza y Cuidado Personal
 {
-  id: 30,
+  id: 200,
   nombre: "Jabón de Rosas  Artesanal ",
   descripcion: "Jabón artesanal en forma de rosa. Hidrata, suaviza, regenera y calma la piel. Ideal para todo tipo de piel.",
-  precio: 12000,  // Asumiendo pesos colombianos
+  precio: 10000,  // Asumiendo pesos colombianos
   categoria: "Belleza y Cuidado Personal",
-  disponible: true,
+  disponible: false,
   imagenes: [
     "img/jabones/jabon_rosas1.jpg",
   ],
@@ -345,12 +424,12 @@ const productos = [
 },
 
 {
-  id: 31,
+  id: 201,
   nombre: "Jabón de Carbón Activado",
   descripcion: "Jabón artesanal con carbón activado. Limpia, purifica y controla el exceso de grasa e impurezas. Ideal para pieles grasas.",
-  precio: 12000,
+  precio: 10500,
   categoria: "Belleza y Cuidado Personal",
-  disponible: true,
+  disponible: false,
   imagenes: [
     "img/jabones/jabon_carbon_activado1.jpg"
   ],
@@ -364,12 +443,12 @@ const productos = [
 }, 
 
 {
-  id: 32,
+  id: 203,
   nombre: "Jabón de Avena Artesanal",
   descripcion: "Jabón artesanal en forma de rosa con avena natural. Exfolia suavemente, nutre e hidrata la piel. Ideal para pieles sensibles o con irritaciones.",
   precio: 12000,
   categoria: "Belleza y Cuidado Personal",
-  disponible: true,
+  disponible: false,
   imagenes: [
     "img/jabones/jabon_avena1.jpg"
   ],
@@ -380,8 +459,55 @@ const productos = [
     "Ideal para todo tipo de piel",
     "Suaviza e hidrata la piel"
   ]
-}
+},
 
+
+
+//---------------------------------------------------------------------------------------------
+// medias
+{
+  "id": 100,
+  "nombre": "Medias De Dragon",
+  "descripcion": "Medias cómodas y resistentes con un diseño único de dragón. Fabricadas con materiales de alta calidad que brindan suavidad, transpirabilidad y durabilidad, ideales para uso diario o como complemento llamativo en tu outfit.",
+  "precio": 10500,
+  "categoria": "Medias",
+  "disponible": true,
+  "imagenes": [
+    "img/medias/medias1.png",
+        "img/medias/medias2.png"
+
+  ],
+  "imagen": "img/medias/medias1.png",
+  "caracteristicas": [
+    "Diseño exclusivo con temática de dragón",
+    "Tela suave y transpirable para mayor comodidad",
+    "Costuras reforzadas para mayor durabilidad",
+    "Ajuste elástico que se adapta al pie sin apretar",
+    "Ideales para uso casual o deportivo"
+  ]
+},
+
+{
+  "id": 101,
+  "nombre": "Medias con Caracteres Chinos",
+  "descripcion": "Medias modernas y originales con diseño de caracteres chinos bordados. Confeccionadas con tela suave, transpirable y elástica para brindar comodidad durante todo el día, combinando estilo y cultura oriental en cada paso.",
+  "precio": 10500,
+  "categoria": "Medias",
+  "disponible": true,
+  "imagenes": [
+    "img/medias/medias_chinas.png",
+    "img/medias/medias_chinas2.png"
+
+  ],
+  "imagen": "img/medias/medias_chinas.png",
+  "caracteristicas": [
+    "Diseño exclusivo con caracteres chinos bordados",
+    "Tela suave y transpirable",
+    "Ajuste cómodo y elástico",
+    "Costuras reforzadas para mayor resistencia",
+    "Estilo único inspirado en la cultura oriental"
+  ]
+}
 
 
 
