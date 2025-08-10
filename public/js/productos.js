@@ -376,7 +376,7 @@ const productos = [
   "precio": precioCamisas,
   "precioAnterior": 36000,
   "categoria": "CAMISAS",
-  "disponible": true,
+  "disponible": false,
   "imagenes": [
     "img/camisetas/esqueleto2.jpg",
     "img/camisetas/esqueleto.jpg",
@@ -405,7 +405,7 @@ const productos = [
   "descripcion": "Medias cómodas y resistentes con un diseño único de dragón. Fabricadas con materiales de alta calidad que brindan suavidad, transpirabilidad y durabilidad, ideales para uso diario o como complemento llamativo en tu outfit.",
   "precio": 10500,
   "categoria": "Medias",
-  "disponible": true,
+  "disponible": false,
   "imagenes": [
     "img/medias/medias1.png",
         "img/medias/medias2.png"
@@ -427,7 +427,7 @@ const productos = [
   "descripcion": "Medias modernas y originales con diseño de caracteres chinos bordados. Confeccionadas con tela suave, transpirable y elástica para brindar comodidad durante todo el día, combinando estilo y cultura oriental en cada paso.",
   "precio": 10500,
   "categoria": "Medias",
-  "disponible": true,
+  "disponible": false,
   "imagenes": [
     "img/medias/medias_chinas.png",
     "img/medias/medias_chinas2.png"
