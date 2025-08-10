@@ -132,7 +132,7 @@ body {
 
 
 .promo-image img {
-  max-width: 1000px;
+  max-width: 100%;
   height: 500px;
   border-radius: 10px;
 }
