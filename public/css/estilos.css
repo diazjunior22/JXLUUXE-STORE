@@ -18,7 +18,7 @@ body {
 }
 
 /* Hero Section */
-.hero-section {
+/* .hero-section {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -28,7 +28,19 @@ body {
   background-position: center;
   color: rgb(255, 255, 255);
   height: 300px;
+} */
+
+
+.bg-dark {
+    background-color: #000 !important; /* Negro puro */
 }
+
+.text-jx {
+    color: #f1c40f; /* Dorado */
+}
+
+
+
 .hero-section .container .h1 {
   color: white;
 }
@@ -43,7 +55,100 @@ body {
 }
 .navbar-brand {
   font-size: 1.5rem;
+
+
 }
+
+
+.header-promo {
+  background-color: black;
+  color: white;
+  padding: 50px 0;
+}
+
+.container-promo {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 20px;
+}
+
+/* Texto */
+.promo-text .small-text {
+  font-size: 1rem;
+  letter-spacing: 2px;
+  color: #f1c40f;
+}
+
+.promo-text .big-text {
+  font-size: 3rem;
+  font-weight: 900;
+  line-height: 1.2;
+}
+
+.promo-text .sub-text {
+  font-size: 1.5rem;
+  margin-top: 10px;
+  color: #ccc;
+}
+
+.btn-jx {
+  background-color: #f1c40f; /* Amarillo dorado */
+  color: black;
+  font-weight: bold;
+  padding: 12px 24px;
+  border: none;        
+  outline: none;       
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+/* Estilo del enlace dentro del botón */
+.btn-jx a {
+  text-decoration: none;  /* Quita subrayado */
+  color: inherit;         /* Hereda color del botón */
+  outline: none;          /* Sin borde de enfoque */
+  display: inline-block;  /* Hace que el enlace llene el botón */
+  width: 100%;
+  height: 100%;
+}
+
+.btn-jx:hover {
+  background-color: #d4ac0d; /* Amarillo más oscuro */
+  transform: translateY(-2px);
+}
+
+
+/* Imagen */
+
+.promo-image{
+  height: 80%;
+}
+
+
+.promo-image img {
+  max-width: 1000px;
+  height: 500px;
+  border-radius: 10px;
+}
+
+
+/* Responsive */
+@media (max-width: 768px) {
+  .container-promo {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+
+
+
 
 /* Tarjetas de productos */
 .producto-card {
@@ -319,6 +424,41 @@ html {
   background-color: var(--success-color) !important;
 }
 
+.badge.bg-danger {
+  background-color: var(--danger-color) !important;
+}
+
+/* Estilos para productos no disponibles */
+.producto-card.opacity-75 {
+  filter: grayscale(30%);
+}
+
+.producto-card.opacity-75:hover {
+  transform: none;
+  box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075) !important;
+}
+
+.producto-card.opacity-75 .card-img-top {
+  filter: grayscale(20%);
+}
+
+.producto-card.opacity-75 .card-title {
+  color: #6c757d;
+}
+
+.producto-card.opacity-75 .btn-secondary {
+  cursor: pointer;
+  opacity: 0.8;
+  background-color: #6c757d;
+  border-color: #6c757d;
+}
+
+.producto-card.opacity-75 .btn-secondary:hover {
+  background-color: #5a6268;
+  border-color: #545b62;
+  opacity: 1;
+}
+
 /* Responsive para galería */
 @media (max-width: 768px) {
 
@@ -375,3 +515,28 @@ html {
 
 
 /* Estilos para el botón de "Agregar al carrito" */
+
+/* Estilos para productos no disponibles en detalle */
+.product-gallery .main-image img.no-disponible {
+  filter: grayscale(30%);
+  opacity: 0.8;
+}
+
+.display-5.no-disponible {
+  color: #6c757d;
+}
+
+.btn-secondary:disabled {
+  cursor: not-allowed;
+  opacity: 0.7;
+}
+
+/* Estilos para botones de productos no disponibles */
+.btn-secondary:not(:disabled) {
+  cursor: pointer;
+}
+
+.btn-secondary:not(:disabled):hover {
+  background-color: #5a6268;
+  border-color: #545b62;
+}

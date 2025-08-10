@@ -10,25 +10,26 @@
 </head>
 <body>
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-primary  color-jx">
-        <div class="container ">
-            <a class="navbar-brand fw-bold" href="index.html"><span class="text-jx">JX</span>LUXE STORE</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item">
-                        <a class="nav-link link-offset-1" href="index.html">Inicio</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link link-offset-1" href="#productos">Productos</a>
-                    </li>
-                </ul>
-            </div>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark color-jx">
+    <div class="container">
+        <a class="navbar-brand fw-bold" href="index.html">
+            <span class="text-jx">JX</span>LUXE STORE
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                    <a class="nav-link link-offset-1" href="index.html">Inicio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link link-offset-1" href="#productos">Productos</a>
+                </li>
+            </ul>
         </div>
-    </nav>
-
+    </div>
+</nav>
 
     <!-- Breadcrumb -->
     <nav aria-label="breadcrumb" class="bg-light">
@@ -93,7 +94,7 @@
         });
 
         function cargarProductoDetalle(id) {
-          const producto = obtenerProductoPorId(id); // Usar la función actualizada que verifica disponibilidad
+          const producto = productos.find(p => p.id === id); // Buscar el producto sin filtrar por disponibilidad
           
           if (!producto) {
             mostrarProductoNoEncontrado();
@@ -112,7 +113,7 @@
                 <!-- Galería de imágenes -->
                 <div class="product-gallery">
                   <div class="main-image mb-3">
-                    <img id="imagenPrincipal" src="${producto.imagenes[0]}" class="img-fluid rounded shadow" alt="${producto.nombre}">
+                    <img id="imagenPrincipal" src="${producto.imagenes[0]}" class="img-fluid rounded shadow ${!producto.disponible ? 'no-disponible' : ''}" alt="${producto.nombre}">
                   </div>
                   <div class="thumbnail-images">
                     <div class="row g-2">
@@ -132,9 +133,9 @@
                 <div class="ps-lg-4">
                   <div class="d-flex align-items-center mb-2">
                     <span class="badge bg-secondary me-2">${producto.categoria}</span>
-                    <span class="badge bg-success">Disponible</span>
+                    <span class="badge ${producto.disponible ? 'bg-success' : 'bg-danger'}">${producto.disponible ? 'Disponible' : 'NO DISPONIBLE'}</span>
                   </div>
-                  <h1 class="display-5 fw-bold mb-3">${producto.nombre}</h1>
+                  <h1 class="display-5 fw-bold mb-3 ${!producto.disponible ? 'no-disponible' : ''}">${producto.nombre}</h1>
                   <p class="lead text-muted mb-4">${producto.descripcion}</p>
                   
                   ${producto.caracteristicas ? `
@@ -154,8 +155,8 @@
                   </div>
                   
                   <div class="d-grid gap-2 d-md-flex">
-                    <button class="btn btn-dark btn-lg flex-fill" onclick="contactarVendedor('${producto.nombre}')">
-                      Contactar Vendedor
+                    <button class="btn ${producto.disponible ? 'btn-dark' : 'btn-secondary'} btn-lg flex-fill" onclick="${producto.disponible ? `contactarVendedor('${producto.nombre}')` : `mostrarMensajeNoDisponible('${producto.nombre}')`}">
+                      ${producto.disponible ? 'Contactar Vendedor' : 'Consultar Disponibilidad'}
                     </button>
                     <button class="btn btn-outline-secondary btn-lg" onclick="compartirProducto('${producto.nombre}')">
                       Compartir
@@ -230,6 +231,12 @@
 
         function contactarVendedor(nombreProducto) {
             const mensaje = `Hola, estoy interesado en el producto: ${nombreProducto}`;
+            const whatsappUrl = `https://wa.me/573024602782/?text=${encodeURIComponent(mensaje)}`;
+            window.open(whatsappUrl, '_blank');
+        }
+
+        function mostrarMensajeNoDisponible(nombreProducto) {
+            const mensaje = `Hola, estoy interesado en saber cuándo estará disponible el producto: ${nombreProducto}`;
             const whatsappUrl = `https://wa.me/573024602782/?text=${encodeURIComponent(mensaje)}`;
             window.open(whatsappUrl, '_blank');
         }

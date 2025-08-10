@@ -36,7 +36,7 @@ const productos = [
 
   {
   id: 2,
-  nombre: "🎧 AirPord Max - Gris Espacial",
+  nombre: "🎧 AirPord Max - Gris",
   descripcion: "Audífonos inalámbricos de alta gama con sonido envolvente, cancelación activa de ruido y diseño elegante en color gris. Perfectos para disfrutar de una experiencia auditiva premium.",
   precio: 110000,
   precioAnterior: 150000,
@@ -394,73 +394,7 @@ const productos = [
   ]
 },
 
-
-
-
-
-
-
-
 //---------------------------------------------------------------------------------------------
-
-  // CATEGORIA Belleza y Cuidado Personal
-{
-  id: 200,
-  nombre: "Jabón de Rosas  Artesanal ",
-  descripcion: "Jabón artesanal en forma de rosa. Hidrata, suaviza, regenera y calma la piel. Ideal para todo tipo de piel.",
-  precio: 10000,  // Asumiendo pesos colombianos
-  categoria: "Belleza y Cuidado Personal",
-  disponible: false,
-  imagenes: [
-    "img/jabones/jabon_rosas1.jpg",
-  ],
-  imagen: "img/jabones/jabon_rosas1.jpg",
-  caracteristicas: [
-    "Hidrata, suaviza y relaja",
-    "Regenera la piel",
-    "Ideal para todo tipo de piel",
-    "Alivia la piel irritada o sensible"
-  ]
-},
-
-{
-  id: 201,
-  nombre: "Jabón de Carbón Activado",
-  descripcion: "Jabón artesanal con carbón activado. Limpia, purifica y controla el exceso de grasa e impurezas. Ideal para pieles grasas.",
-  precio: 10500,
-  categoria: "Belleza y Cuidado Personal",
-  disponible: false,
-  imagenes: [
-    "img/jabones/jabon_carbon_activado1.jpg"
-  ],
-  imagen: "img/jabones/jabon_carbon_activado1.jpg",
-  caracteristicas: [
-    "Desintoxica la piel",
-    "Limpia y purifica profundamente",
-    "Ideal para pieles grasas",
-    "Controla el exceso de grasa e impurezas"
-  ]
-}, 
-
-{
-  id: 203,
-  nombre: "Jabón de Avena Artesanal",
-  descripcion: "Jabón artesanal en forma de rosa con avena natural. Exfolia suavemente, nutre e hidrata la piel. Ideal para pieles sensibles o con irritaciones.",
-  precio: 12000,
-  categoria: "Belleza y Cuidado Personal",
-  disponible: false,
-  imagenes: [
-    "img/jabones/jabon_avena1.jpg"
-  ],
-  imagen: "img/jabones/jabon_avena1.jpg",
-  caracteristicas: [
-    "Exfolia y nutre",
-    "Alivia la piel con irritaciones",
-    "Ideal para todo tipo de piel",
-    "Suaviza e hidrata la piel"
-  ]
-},
-
 
 
 //---------------------------------------------------------------------------------------------
